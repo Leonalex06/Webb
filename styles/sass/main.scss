@@ -1,0 +1,56 @@
+@import "./vars.scss";
+@import "./header-nav.scss";
+@import "./header_content.scss";
+@import "./header-bottom-article.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    
+}
+
+body { 
+    background-color:$color-black;
+    min-height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    color: $color-white;
+}
+
+
+.container { 
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_father { 
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+
+    @media screen and (min-width: $mobile-big) and (max-width: $tablet-medium) {
+        grid-template-columns: 70px 1fr 70px;
+      }
+    
+      @media screen and (min-width: $tablet-medium) and (max-width: $desktop-small) {
+        grid-template-columns: 80px 1fr 80px;
+      }
+    
+      @media screen and (min-width: $desktop-small) {
+        grid-template-columns: 100px 1fr 100px;
+      }
+}
+
+
+
+.grid_son { 
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+

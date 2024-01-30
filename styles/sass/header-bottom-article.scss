@@ -1,0 +1,120 @@
+.article_bottom_content{
+display: grid;
+gap: 45px;
+
+
+.article_bottom_nav { 
+    display: flex;
+    justify-content: space-between;
+    
+  h1 { 
+    font-weight: 400;
+  }
+    
+    .view_all_link {
+        color: $color-white;
+        text-decoration: none;
+        
+    }}
+
+
+
+
+
+
+//                                                  CARDS MAIN CONTAINER
+    
+
+ 
+      .article_bottom_cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+
+        
+
+        //                                          CONTENT CONTAINER
+        .card_content { 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+
+ //                                                    CARD  CONTENT
+    .card_container { 
+       
+       height: $card-height;
+       gap: $card-gap;
+       width: $card_size;
+       border: $card-bord solid $color-gray;
+       padding: $card-pad;
+       border-radius: $card-rad;
+       
+
+       .title_card{ 
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        h1 { 
+            font-size: 28px;
+        }
+        
+        p { 
+            color: $color-gray;
+            font-weight: 300;
+        }
+
+       }
+
+       .card_top { 
+        display: flex;
+        justify-content: space-between;
+        color: $color-gray;
+        
+        p { 
+            font-size: 14px;
+        }
+        
+       }
+
+       .link_view_case_study{ 
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+
+      
+
+        .view_case { 
+            text-decoration: none;
+            color: $color-white;
+            font-weight: 400;
+            font-size: 17px;
+            
+           
+        }
+        
+
+        .view_arrow { 
+            width: 30px;
+            display: flex;
+            align-items: center;
+        }}}
+
+        
+
+
+}}
+
+
+
+
+
+
+
+
+

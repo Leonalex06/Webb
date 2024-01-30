@@ -1,0 +1,61 @@
+.article_header { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 510px;
+    
+
+
+ //     ALL CONTENT CONTAINER 
+    .header_content { 
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        justify-content: center;
+        gap: 32px;
+    
+//            TITLE  
+
+        .header_content_title { 
+            font-size: 2.6em;
+            font-weight: 100;
+            letter-spacing: 0.3px;
+
+            h1 { 
+                font-weight: 600;
+            }
+
+            .gray { 
+                color: $color-gray;} }
+
+
+
+
+//               PARAGRAPHS 
+        .under_title{ 
+            letter-spacing: 0.2px;
+            font-size: 1.4em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+//                  BUTTON 
+        .link_get_started_button { 
+            padding-top: 36px;
+            .get_started_content_button { 
+                font-weight: 300;
+                text-decoration: none;
+                color: $color-white;
+                border: solid $color-blue $b-size;
+                padding: $pd-size;
+                padding-left: $pd-L-R;
+                padding-right: $pd-L-R;
+                border-radius: $Rad-size;
+                background-color: $color-blue;  }  }  }
+
+    
+
+
+}
+
