@@ -1,6 +1,7 @@
 
 
 .header { 
+
     
    
         
@@ -16,22 +17,8 @@
             display: none;
         }
         
-        @media screen and (max-width :$tablet-small){
-         display: flex;
-
-         .header_nav { 
-            display: none;
-    
-         }
-
-         .FAQ_get_started { 
-            display: none;
-         }
-
-         .menu_icon { 
-            display: flex;
-         }
-        }
+       
+       
     }
 
 
@@ -41,22 +28,22 @@
 
         .links{ color: $color-gray;
             text-decoration: none;
+            transition-duration: 0.6s;
 
             &:hover {
-                color: $color-white;
-                font-size: 17px;}}
+                color: $color-white;}}
+
                 .dots{
             color: $color-gray ;
         text-decoration: none;}}
 
-
-        
 
         .FAQ_get_started { 
             font-weight: 600;
             display: flex;
             gap: 30px;
             align-items: center;
+
 
             .link { 
                 color: $color-white;
@@ -79,6 +66,33 @@
 
 .logo_class { 
     width: 90px;}
+
+}
+
+
+@media screen and (min-width: $mobile-small) and (max-width: $mobile-big) { 
+    
+    display: flex;
+
+
+    .menu_icon { 
+        display: flex;
+    }
+
+    .header_nav{ 
+        display: none;
+    }
+    
+
+    .logo_container  { 
+        display: flex;
+    }
+
+    .FAQ_get_started { 
+        display: none;
+    }
+    
+    
 }
 
 

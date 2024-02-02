@@ -26,14 +26,21 @@ body {
 .container { 
     display: flex;
     flex-direction: column;
+
+    @media screen and ( min-width : $mobile-small) and (max-width: $tablet-medium)
+{  display: flex;
+flex-direction: column;
+gap: 40px;;
+}
+
 }
 
 .grid_father { 
     display: grid;
     grid-template-columns: 80px 1fr 80px;
 
-    @media screen and (min-width: $mobile-big) and (max-width: $tablet-medium) {
-        grid-template-columns: 70px 1fr 70px;
+    @media screen and (min-width: $mobile-small) and (max-width: $tablet-medium) {
+        grid-template-columns: 100px 30px 200px;
       }
     
       @media screen and (min-width: $tablet-medium) and (max-width: $desktop-small) {

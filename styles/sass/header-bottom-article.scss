@@ -3,6 +3,7 @@ display: grid;
 gap: 45px;
 
 
+
 .article_bottom_nav { 
     display: flex;
     justify-content: space-between;
@@ -27,11 +28,24 @@ gap: 45px;
 
  
       .article_bottom_cards {
+
         display: flex;
         justify-content: center;
         align-items: center;
         justify-content: center;
-        gap: 35px;
+        gap: 46px;
+        
+
+        
+
+
+
+
+
+
+
+
+        
 
         
 
@@ -39,25 +53,53 @@ gap: 45px;
         .card_content { 
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            
+            gap: 29px;   
         }
 
  //                                                    CARD  CONTENT
     .card_container { 
-       
+
        height: $card-height;
        gap: $card-gap;
        width: $card_size;
        border: $card-bord solid $color-gray;
        padding: $card-pad;
        border-radius: $card-rad;
+       transition-duration: 0.4s;
+
+       
+       
+       &:hover { 
+        transform: translateY(-8px);
+        background: $color-blue;
+        border: 1px  $color-white;
+
+        .title_card 
+            p { 
+                color: white;
+      }
+        
+        .card_top { 
+            p { 
+                color: white;
+            }
+        }
+        
+    }
+
+
+       
+       
+
+       
+
+       
        
 
        .title_card{ 
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 9px;
 
         h1 { 
             font-size: 28px;
@@ -74,6 +116,7 @@ gap: 45px;
         display: flex;
         justify-content: space-between;
         color: $color-gray;
+        
         
         p { 
             font-size: 14px;
@@ -93,16 +136,13 @@ gap: 45px;
             text-decoration: none;
             color: $color-white;
             font-weight: 400;
-            font-size: 17px;
-            
-           
-        }
+            font-size: 17px;}
         
 
         .view_arrow { 
             width: 30px;
             display: flex;
-            align-items: center;
+            align-items: end;
         }}}
 
         
