@@ -1,32 +1,44 @@
 .article_bottom_content{
-display: grid;
-gap: 45px;
 
 
+
+// CASE STUDIES AND VIEW ALL 
 
 .article_bottom_nav { 
     display: flex;
     justify-content: space-between;
-    
-  h1 { 
-    font-weight: 400;
-  }
-    
+  
+    //h1 CASE STUDIES 
+    h1 { 
+        font-weight: 400;}
+
     .view_all_link {
-        color: $color-white;
-        text-decoration: none;
+    color: $color-white;
+    text-decoration: none;}
+
+
+    @media screen and (min-width: $mobile-small) and (max-width:$desktop-small) { 
+        display: flex;
+        justify-content: space-around;
+
+        h1 { 
+            font-size: 1em;}}}
+
+
+
+
+
+
         
-    }}
 
 
 
 
 
-
-//                                                  CARDS MAIN CONTAINER
+//                                                  
     
 
- 
+ // CARDS MAIN CONTIANER 
       .article_bottom_cards {
 
         display: flex;
@@ -34,41 +46,30 @@ gap: 45px;
         align-items: center;
         justify-content: center;
         gap: 46px;
-        
+
+        @media screen and (min-width:$mobile-small) and (max-width:$desktop-medium)
+{ display: flex;
+flex-direction: column;
+flex-wrap: wrap;}
 
         
-
-
-
-
-
-
-
-
-        
-
-        
-
         //                                          CONTENT CONTAINER
         .card_content { 
             display: flex;
             flex-direction: column;
-            gap: 29px;   
-        }
+            gap: 29px; }
 
- //                                                    CARD  CONTENT
+ //           CARD MAIN BORDER  
+
     .card_container { 
-
-       height: $card-height;
-       gap: $card-gap;
-       width: $card_size;
-       border: $card-bord solid $color-gray;
-       padding: $card-pad;
-       border-radius: $card-rad;
+       height: 256px;
+       gap: 30px;
+       width: 430px;
+       border: 2px solid $color-gray;
+       padding: 30px;
+       border-radius: 20px;
        transition-duration: 0.4s;
 
-       
-       
        &:hover { 
         transform: translateY(-8px);
         background: $color-blue;
@@ -76,16 +77,11 @@ gap: 45px;
 
         .title_card 
             p { 
-                color: white;
-      }
+                color: white;}
         
         .card_top { 
             p { 
-                color: white;
-            }
-        }
-        
-    }
+                color: white;}}}
 
 
        
@@ -94,7 +90,7 @@ gap: 45px;
        
 
        
-       
+       //  CARD  CONTENT
 
        .title_card{ 
         display: flex;

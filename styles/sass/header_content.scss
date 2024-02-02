@@ -3,13 +3,17 @@
     align-items: center;
     justify-content: center;
     min-height: 510px;
-    @media screen and (min-width: $mobile-small) and (max-width: $mobile-big) { 
+
+    @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
         display: flex;
-        flex-direction: column;
-        
-    }
+        gap: 20px;
+        min-height: 610px;}
+ 
+
+
     
 
+        
 
  //     ALL CONTENT CONTAINER 
     .header_content { 
@@ -19,46 +23,73 @@
         justify-content: center;
         gap: 32px;
 
+        @media screen and (min-width: $mobile-small) and (max-width: 405px) { 
+           display: flex;
+           padding-left: 60px;}
+
+
+      
+
+
+        
+
       
     
 //            TITLE  
 
         .header_content_title { 
-            font-size: 2.6em;
+            font-size: 2.8em;
             font-weight: 100;
             letter-spacing: 0.3px;
-
             h1 { 
-                font-weight: 600;
-            }
-
+                font-weight: 600; }
             .gray { 
-                color: $color-gray;} }
+                color: $color-gray;}
+
+            
+                @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
+                    display: flex;
+                    font-size: 2.5em;
+                    text-align: center; }}
 
 
 
 
 //               PARAGRAPHS 
+
         .under_title{ 
             letter-spacing: 0.2px;
             font-size: 1.4em;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
+
+            @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              font-size: 1.2em;
+              align-items: center;
+              text-align: center; }}
+
+
+
+
 
 //                  BUTTON 
         .link_get_started_button { 
             padding-top: 36px;
+
+
             .get_started_content_button { 
                 font-weight: 300;
                 text-decoration: none;
                 color: $color-white;
-                border: solid $color-blue $b-size;
-                padding: $pd-size;
-                padding-left: $pd-L-R;
-                padding-right: $pd-L-R;
-                border-radius: $Rad-size;
+                border: solid $color-blue $border-size_button;
+                padding: $pd-size_button;
+                padding-left: $pd-L-R_button;
+                padding-right: $pd-L-R_button;
+                border-radius: $Rad-size_button;
                 background-color: $color-blue;  }  }  }
 
     

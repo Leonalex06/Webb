@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 6 |     @media screen and (min-width: $mobile-small) and (max-width: $mobile-big) { 
+ * 7 |     @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
  *   |                                   ^^^^^^^^^^^^^
  *   '
- *   styles\sass\header_content.scss 6:35  root stylesheet */
+ *   styles\sass\header_content.scss 7:35  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      @media screen and (min-width: $mobile-small) and (max-width: $mobile-big) { \d\a   \2502                                    ^^^^^^^^^^^^^\a   \2575 \a   styles\\sass\\header_content.scss 6:35  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { \d\a   \2502                                    ^^^^^^^^^^^^^\a   \2575 \a   styles\\sass\\header_content.scss 7:35  root stylesheet";
 }
