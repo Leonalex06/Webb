@@ -1,14 +1,13 @@
 .article_bottom_content {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
   // CASE STUDIES AND VIEW ALL
 
   .article_bottom_nav {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-  
 
     //h1 CASE STUDIES
     h1 {

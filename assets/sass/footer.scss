@@ -1,63 +1,56 @@
-.footer_columns  {
-    display:  grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+.footer_columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 
-    @media screen and (min-width: $mobile_small) and (max-width: $tablet_small)  {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 30px;
+  @media screen and (min-width: $mobile_small) and (max-width: $tablet_small) {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: $tablet_small) and (max-width: $desktop_small) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+  }
+
+  .footer_options_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 50px;
+    padding-bottom: 40px;
+
+    h3 {
+      color: #fff;
     }
 
-    @media screen and (min-width: $tablet_small) and (max-width: $desktop_small)  {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 30px;
-    }
- 
-    .footer_options_container  {
+    .list {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 50px;
-      padding-bottom: 40px;
-
-      h3 { 
-        color:#fff;
-      }
-
-      .list { display: flex;
-        flex-direction: column;
-    gap: 15px;
-color: $color_gray;}
+      gap: 15px;
+      color: $color_gray;
+    }
 
     .list_items {
-       list-style: none;
+      list-style: none;
     }
 
-    @media screen and (min-width: $mobile_small) and (max-width: $tablet_small)  {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
+    @media screen and (min-width: $mobile_small) and (max-width: $tablet_small) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
-   
-    }
-   
+  }
 
-
-.logo { 
+  .logo {
     display: flex;
     align-items: start;
 
-
     .logobatman {
-        width: 250px;
+      width: 250px;
     }
-}
-
-
-
-
+  }
 }
