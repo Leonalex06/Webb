@@ -24,7 +24,7 @@ body {
 // WEB CONTAINER
 .container {
   display: flex;
-  gap: 35px;
+  gap: 100px;
   flex-direction: column;
 
   @media screen and (min-width: $mobile_small) and (max-width: $tablet_medium) {
