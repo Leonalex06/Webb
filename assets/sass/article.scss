@@ -7,17 +7,19 @@
 .article_bottom_nav { 
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 35px;
   
     //h1 CASE STUDIES 
     h1 { 
         font-weight: 400;}
 
     .view_all_link {
-    color: $color-white;
+    color: $color_white;
     text-decoration: none;}
 
 
-    @media screen and (min-width: $mobile-small) and (max-width:$desktop-small) { 
+    @media screen and (min-width: $mobile_small) and (max-width:$desktop_small) { 
         display: flex;
         justify-content: space-around;
 
@@ -46,34 +48,50 @@
         align-items: center;
         justify-content: center;
         gap: 46px;
+        padding-bottom: 40px;
 
-        @media screen and (min-width:$mobile-small) and (max-width:$desktop-medium)
+        @media screen and (min-width:$mobile_small) and (max-width:$desktop_medium)
 { display: flex;
-flex-direction: column;
-flex-wrap: wrap;}
+flex-direction: column;}
+
 
         
         //                                          CONTENT CONTAINER
         .card_content { 
             display: flex;
             flex-direction: column;
-            gap: 29px; }
+            gap: 29px; 
+        
+            @media screen and (min-width: $mobile_small) and (max-width: $tablet_small) { 
+                display: flex;
+        
+            }}
 
  //           CARD MAIN BORDER  
 
     .card_container { 
+
+        @media screen and (min-width:$mobile_small) and (max-width:$mobile_big)
+        { display: flex;
+        width: 100%;}
+       
        height: 256px;
        gap: 30px;
        width: 430px;
-       border: 2px solid $color-gray;
+       border: 2px solid $color_gray;
        padding: 30px;
        border-radius: 20px;
        transition-duration: 0.4s;
 
+       @media screen and (min-width: $mobile_small) and (max-width: $tablet_small) { 
+        display: flex;
+
+    }
+
        &:hover { 
-        transform: translateY(-8px);
-        background: $color-blue;
-        border: 1px  $color-white;
+        transform: translateY(-3px);
+        background: $color_blue;
+        border: 1px  $color_white;
 
         .title_card 
             p { 
@@ -92,58 +110,48 @@ flex-wrap: wrap;}
        
        //  CARD  CONTENT
 
+       
        .title_card{ 
         display: flex;
         flex-direction: column;
         gap: 9px;
 
         h1 { 
-            font-size: 28px;
-        }
+            font-size: 28px;}
         
         p { 
-            color: $color-gray;
-            font-weight: 300;
-        }
+            color: $color_gray;
+            font-weight: 300; }}
 
-       }
 
        .card_top { 
         display: flex;
         justify-content: space-between;
-        color: $color-gray;
-        
-        
+        color: $color_gray;
+            
         p { 
             font-size: 14px;
-        }
-        
-       }
+        }}
 
+
+        
        .link_view_case_study{ 
         display: flex;
         align-items: center;
         gap: 8px;
         
-
-      
-
         .view_case { 
             text-decoration: none;
-            color: $color-white;
+            color: $color_white;
             font-weight: 400;
             font-size: 17px;}
         
-
         .view_arrow { 
             width: 30px;
             display: flex;
-            align-items: end;
-        }}}
+            align-items: end; }}}
 
         
-
-
 }}
 
 

@@ -1,15 +1,17 @@
 
 
 .header { 
-     
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
     // ALL NAVBAR CONTAINER 
-    .header_nav_container {
+    .header_nav_elements {
         font-weight: 300; 
         display: flex;
-        gap: 10px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center; 
-        padding-top: 29px;}
+    }
 
         //    ALL LINKS ON NAV 
         .header_nav { 
@@ -17,17 +19,19 @@
         gap: 13px;
 
         .links
-        {color: $color-gray;
+        {color: $color_gray;
             text-decoration: none;
             transition-duration: 0.6s;
          &:hover {
-                color: $color-white;}}
+                color: $color_white;}}
+            
+            .dots { 
+                color: $color_gray;           
+            }
+            
+            }
 
 
-                         //NAVBAR DOTS 
-            .dots{
-            color: $color-gray ;
-        text-decoration: none;}}
 
         
         
@@ -39,16 +43,19 @@
             display: flex;
             gap: 30px;
             align-items: center;
+            
 
             .link { 
-                color: $color-white;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 1.1em;
+                color: $color_white;
                 text-decoration: none;
-                border: solid $color-blue $border-size_button;
-                border-radius: $Rad-size_button;
-                padding: $pd-size_button;
-                padding-left: $pd-L-R_button;
-                padding-right: $pd-L-R_button;
-                background:$color-blue ; }}
+                border: solid $color_blue $border_size_button;
+                border-radius: $rad_size_button;
+                padding: $pd_size_button;
+                padding-left: $pd_left_right_button;
+                padding-right: $pd_left_right_button;
+                background:$color_blue ; }}
 
 
 
@@ -63,7 +70,7 @@
 
 // NAVBAR MEDIA 
 
-@media screen and (min-width: $mobile-small) and (max-width: $tablet-medium) { 
+@media screen and (min-width: $mobile_small) and (max-width: $tablet_medium) { 
     
     display: flex;
     .header_nav { 

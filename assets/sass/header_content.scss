@@ -4,7 +4,7 @@
     justify-content: center;
     min-height: 510px;
 
-    @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
+    @media screen and (min-width: $mobile_small) and (max-width:$tablet_small) { 
         display: flex;
         gap: 20px;
         min-height: 610px;}
@@ -21,11 +21,12 @@
         flex-direction: column;
        align-items: center;
         justify-content: center;
-        gap: 32px;
+        gap: 32px; 
 
-        @media screen and (min-width: $mobile-small) and (max-width: 405px) { 
+        @media screen and (min-width: $mobile_small) and (max-width: $desktop_small) { 
            display: flex;
-           padding-left: 60px;}
+        align-items: center;
+    justify-content: center;}
 
 
       
@@ -44,10 +45,10 @@
             h1 { 
                 font-weight: 600; }
             .gray { 
-                color: $color-gray;}
+                color: $color_gray;}
 
             
-                @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
+                @media screen and (min-width: $mobile_small) and (max-width:$tablet_small) { 
                     display: flex;
                     font-size: 2.5em;
                     text-align: center; }}
@@ -64,7 +65,7 @@
             flex-direction: column;
             align-items: center;
 
-            @media screen and (min-width: $mobile-small) and (max-width:$tablet-small) { 
+            @media screen and (min-width: $mobile_small) and (max-width:$tablet_small) { 
               display: flex;
               flex-direction: column;
               flex-wrap: wrap;
@@ -78,22 +79,22 @@
 
 //                  BUTTON 
         .link_get_started_button { 
-            padding-top: 36px;
+            padding-top: 40px;
 
 
             .get_started_content_button { 
                 font-weight: 300;
+                font-size: 1.1em;
                 text-decoration: none;
-                color: $color-white;
-                border: solid $color-blue $border-size_button;
-                padding: $pd-size_button;
-                padding-left: $pd-L-R_button;
-                padding-right: $pd-L-R_button;
-                border-radius: $Rad-size_button;
-                background-color: $color-blue;  }  }  }
+                color: $color_white;
+                border: solid $color_blue $border_size_button;
+                padding: $pd_size_button;
+                padding-left: $pd-left_right_button;
+                padding-right: $pd_left_right_button;
+                border-radius: $rad_size_button;
+                background-color: $color_blue;  } } }
 
     
-
 
 }
 
